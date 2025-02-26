@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/style.css" rel="stylesheet">
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <h1>Countdown Timer</h1>
+  </header>
+  <main>
+    <!-- 残り時間表示 -->
+    <p class="timer">
+      <span id="hour">00</span>
+      &#x3A;
+      <span id="min">00</span>
+      &#x3A;
+      <span id="sec">00</span>
+    </p>
+
+    <!-- 入力欄 -->
+    <form action="#" id="form_time">
+
+      <!-- h入力欄 -->
+      <div class="h_wrap">
+        <p>hours</p>
+        <input type="number" name="input_h">
+      </div>
+
+      <!-- m入力欄 -->
+      <div class="m_wrap">
+        <p>minutes</p>
+        <input type="number" name="input_m">
+      </div>
+
+      <!-- s入力欄 -->
+      <div class="s_wrap">
+        <p>seconds</p>
+        <input type="number" name="input_s">
+      </div>
+    </form>
+
+    <!-- ボタン置き場 -->
+    <div class="button">
+      <button type="submit" form="form_time" id="start">Start</button>
+      <button type="button" id="stop">Stop</button>
+      <button type="button" id="reset">Reset</button>
+    </div>
+
+    <!-- エラーメッセージ表示箇所 -->
+    <p class="error"></p>
+
+  </main>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

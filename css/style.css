@@ -1,0 +1,105 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #333;
+  color: #fff;
+}
+
+header h1 {
+  text-align: center;
+  font-size: clamp(1.5625rem, 1.2077rem + 1.5136vw, 2.5rem);
+  margin-top: 10px;
+}
+
+.timer {
+  font-size: clamp(3.125rem, 2.4155rem + 3.0272vw, 5rem);
+  text-align: center;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.error {
+  text-align: center;
+  margin: 0;
+  color: rgb(255, 0, 0);
+  font-size: 14px;
+}
+
+form div {
+  margin: 5px;
+}
+
+form div p {
+  text-align: center;
+}
+
+input[type="number"] {
+  width: 90px;
+  height: 50px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: clamp(1.25rem, 1.0135rem + 1.0091vw, 1.875rem);
+  border: none;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+}
+
+.button button {
+  display: block;
+  width: 80px;
+  height: 35px;
+  border-radius: 3px;
+  margin: 10px;
+  border: none;
+  color: #fff;
+  background-color: #757575;
+  cursor: pointer;
+}
+
+.button button:hover {
+  background: #b6b6b6;
+}
+
+.flash {
+  animation-name: flashing;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+}
+
+@keyframes flashing {
+  0% {
+    background-color: #333;
+  }
+
+  25% {
+    background-color: yellow;
+  }
+
+  50% {
+    background-color: #333;
+  }
+
+  75% {
+    background-color: yellow;
+  }
+
+  100% {
+    background-color: #333;
+  }
+}
