@@ -11,7 +11,7 @@ let mm = 0;
 let ss = 0;
 
 // ループ制御用変数
-let guruguru;
+let roop_roop;
 
 // 今タイマーは動いてますか？の判定用変数。0:off / 1:on 
 let timer_on = 0;
@@ -37,7 +37,7 @@ function countdown_timer() {
     // 背景を点滅させる
     document.querySelector('body').classList.add('flash');
     // 止める
-    clearInterval(guruguru);
+    clearInterval(roop_roop);
     // タイマー今オフですよのやつ
     timer_on = 0;
 
@@ -78,7 +78,7 @@ function countdown_timer() {
 // ループ
 function roop() {
   // 1秒ごとにカウントダウンシステムを繰り返す
-  guruguru = setInterval(countdown_timer, 1000);
+  roop_roop = setInterval(countdown_timer, 1000);
 }
 
 
@@ -172,7 +172,7 @@ function stop() {
     // ストップボタンの色を変える
     document.getElementById('stop').style.background = '#66cdaa';
     // 止める
-    clearInterval(guruguru);
+    clearInterval(roop_roop);
   }
 }
 
@@ -181,7 +181,7 @@ function stop() {
 // リセットボタン押下時
 function reset() {
   // 止める
-  clearInterval(guruguru);
+  clearInterval(roop_roop);
   // 全部初期値にする
   timer_on = 0;
   timer_stop = 0;
